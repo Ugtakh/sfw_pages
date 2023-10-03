@@ -24,7 +24,7 @@ const News = ({ news }: { news: INews[] }) => {
   // if (!data) return <div className="text-center">...</div>;
 
   return (
-    <div className="bg-babyblue" id="project">
+    <div id="project">
       <div className="container my-5 mx-auto py-5">
         <div className="mb-5 text-center">
           <h2 className="mb-12 pb-4 text-center text-3xl font-bold">
