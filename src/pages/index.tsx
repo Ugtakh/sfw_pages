@@ -43,7 +43,7 @@ export default function Home() {
       <Buyers />
       <Provide />
       <Why />
-      <News news={news} />
+      <News news={news.slice(0, 3)} />
       {/* <Clientsay /> */}
       {/* <Newsletter /> */}
     </main>

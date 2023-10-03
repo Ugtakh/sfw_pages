@@ -1,6 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import EmployeeCard from "@/components/EmployeeCard";
+import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
+import { groq } from "next-sanity";
+import client from "@/utils/sanity/sanity";
+import { INews } from "@/utils/sanity/sanityApi";
+
+type EmployeesType = {
+  employees: {
+    title: string;
+    image: string;
+  };
+};
 
 interface IAboutProps {
   title: string;
@@ -64,7 +75,7 @@ const AboutCard = ({ title, content, imgUrl, align }: IAboutProps) => {
   );
 };
 
-const StoryCard = () => {
+const StoryCard = ({ employees }: any) => {
   return (
     <div className="flex lg:flex-row flex-col justify-between gap-8 pt-2">
       <div className="w-full lg:w-5/12 flex flex-col justify-center">
@@ -81,11 +92,11 @@ const StoryCard = () => {
       <div className="w-full lg:w-8/12 lg:pt-8">
         <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md">
           {/* Card */}
-          {employees.map((employee, index) => (
+          {employees.map((employee: any, index: number) => (
             <EmployeeCard
               key={index}
-              name={employee.name}
-              avatarUrl={employee.avatarUrl}
+              title={employee.title}
+              image={employee.image}
             />
           ))}
         </div>
@@ -94,7 +105,8 @@ const StoryCard = () => {
   );
 };
 
-const About = () => {
+const About = ({ employees }: any) => {
+  console.log("E", employees);
   return (
     <section className="">
       <div className="2xl:container 2xl:mx-auto lg:py-4 lg:px-20 md:py-4 md:px-6 py-4 px-4">
@@ -128,7 +140,7 @@ const About = () => {
         />
       </div>
       <div className="2xl:container 2xl:mx-auto lg:py-10 lg:px-20 md:py-10 md:px-6 py-9 px-4 ">
-        <StoryCard />
+        <StoryCard employees={employees} />
       </div>
     </section>
   );
@@ -136,4 +148,14 @@ const About = () => {
 
 export default About;
 
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+export const getServerSideProps = async (context: any) => {
+  // const res = await fetch("https://api.github.com/repos/vercel/next.js");
+  // const employees = await res.json();
+  const query = groq`*[_type == "employees"]{ 
+        title, 
+        'image': avatar.asset->url
+    }`;
+  const employees: EmployeesType[] = await client.fetch(query);
+
+  return { props: { employees: employees.slice(0, 4) } };
+};
