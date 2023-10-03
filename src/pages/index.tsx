@@ -26,7 +26,7 @@ export default function Home() {
     } | order(date desc)`;
 
     const newses: INews[] = await client.fetch(query);
-    console.log("KK", newses);
+    console.log("KK", newses.length);
     setNews(newses);
     // return news;
   }
