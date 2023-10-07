@@ -49,7 +49,7 @@ const cardData: cardDataType[] = [
 
 const Buyers = () => {
   return (
-    <div className="mx-auto max-w-7xl py-7 px-6">
+    <div className="mx-auto py-7 px-6">
       <div className="grid align-top  lg:grid-cols-3 gap-y-20 gap-x-5">
         {cardData.map((card, i) => (
           <Card key={i} item={card} />

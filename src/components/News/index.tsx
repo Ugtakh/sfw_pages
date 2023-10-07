@@ -31,7 +31,7 @@ const News = ({ news }: { news: INews[] }) => {
             Сүүлийн үеийн нийтлэлүүд
           </h2>
           {/* News Card Container */}
-          <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
+          <div className="gap-6 md:grid md:grid-cols-2  lg:grid-cols-3 xl:gap-x-12">
             {news &&
               news.map((el: any, id: any) => <NewsCard key={id} news={el} />)}
           </div>

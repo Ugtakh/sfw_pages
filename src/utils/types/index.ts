@@ -86,8 +86,8 @@ type LoanRepaymentScheduleTableProps = {
 interface TextFieldProps {
   label?: string;
   name: string;
-  type: string;
-  unit: string;
+  type?: string;
+  unit?: string;
   placeholder: string;
   value?: any;
   error?: any;

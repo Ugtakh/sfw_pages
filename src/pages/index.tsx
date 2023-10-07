@@ -28,7 +28,6 @@ export default function Home() {
     const newses: INews[] = await client.fetch(query);
     console.log("KK", newses.length);
     setNews(newses);
-    // return news;
   }
 
   useEffect(() => {
@@ -36,17 +35,12 @@ export default function Home() {
   }, []);
 
   return (
-    // <Suspense fallback={<div>Уншиж байна.</div>}>
     <main>
       <Banner />
-      {/* <Companies /> */}
       <Buyers />
       <Provide />
       <Why />
       <News news={news.slice(0, 3)} />
-      {/* <Clientsay /> */}
-      {/* <Newsletter /> */}
     </main>
-    // </Suspense>
   );
 }

@@ -27,7 +27,18 @@ const Calculator = () => {
 
   const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    const newVal = formatValue(value);
+    setState({
+      ...state,
+      [name]: newVal,
+    });
+  };
+
+  const onInputChangeInterest = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    console.log(value);
     const newVal = formatValue(value).replaceAll(",", "");
+    console.log(newVal);
     setState({
       ...state,
       [name]: newVal,
@@ -80,17 +91,17 @@ const Calculator = () => {
                   name="interestRate"
                   type="number"
                   label="Зээлийн хүү /сараар/"
-                  placeholder="2"
+                  placeholder="3.3"
                   unit="%"
                   value={state.interestRate}
                   error={state.errors?.interestRate}
-                  onChange={onInputChange}
+                  onChange={onInputChangeInterest}
                 />
                 <TextField
                   name="loanTenure"
                   type="number"
                   label="Зээлийн хугацаа /сараар/"
-                  placeholder="3"
+                  placeholder="12"
                   unit="сар"
                   value={state.loanTenure}
                   error={state.errors?.loanTenure}

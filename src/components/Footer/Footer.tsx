@@ -152,15 +152,11 @@ const Footer = () => {
           </h4>
           <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
             <h4 className="text-primary text-sm font-normal">
-              <Link href="/" target="_blank">
-                Хуулийн бодлого
-              </Link>
+              <Link href="/">Хуулийн бодлого</Link>
             </h4>
             <div className="h-5 bg-bordertop w-0.5"></div>
             <h4 className="text-primary text-sm font-normal">
-              <Link href="/" target="_blank">
-                Үйлчилгээний нөхцөл
-              </Link>
+              <Link href="/">Үйлчилгээний нөхцөл</Link>
             </h4>
           </div>
         </div>
