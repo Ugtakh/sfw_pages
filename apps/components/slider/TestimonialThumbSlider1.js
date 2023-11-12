@@ -44,8 +44,8 @@ const TestimonialThumbSlider1 = () => {
           ref={(slider) => setSlider2(slider)}
           className="testimonial-nav "
         >
-          {datas.map((testimonial) => (
-            <TestimonialImg testimonial={testimonial} />
+          {datas.map((testimonial, i) => (
+            <TestimonialImg key={i} testimonial={testimonial} />
           ))}
         </Slider>
         <Slider
@@ -54,8 +54,8 @@ const TestimonialThumbSlider1 = () => {
           ref={(slider) => setSlider1(slider)}
           className="slider-testimonial"
         >
-          {datas.map((testimonial) => (
-            <TestimonialCard testimonial={testimonial} />
+          {datas.map((testimonial, i) => (
+            <TestimonialCard key={i} testimonial={testimonial} />
           ))}
         </Slider>
       </div>
