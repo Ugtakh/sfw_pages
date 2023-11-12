@@ -1,0 +1,51 @@
+import React from "react";
+import MemberCard from "./MemberCard";
+import Top from "./Top";
+
+const members = [
+  {
+    position: "ТУЗ-ийн ДАРГА",
+    name: "Тагарваа Түвшинбаяр",
+    positionTitle: "“Сэкюр Финанс ББСБ”-ын Хувьцаа эзэмшигч",
+  },
+  {
+    position: "Хараат бус ГИШҮҮН",
+    name: "Алтаншагай Даваабилэг",
+    positionTitle: "Үндэсний ба Олон улсын Арилжааны Арбитрт Арбитч",
+  },
+  {
+    position: "ТУЗ-ийн ГИШҮҮН",
+    name: "Тагарваа Тэгшжаргал",
+    positionTitle: "“Сэкюр Финанс ББСБ”-ын Гүйцэтгэх захирал",
+  },
+  {
+    position: "ТУЗ-ийн ГИШҮҮН",
+    name: "Тагарваа Тэгшбаяр",
+    positionTitle: "“Сэкюр Финанс ББСБ”-ын Төв салбарын захирал",
+  },
+  {
+    position: "ТУЗ-ийн ГИШҮҮН",
+    name: "Түвшинбаяр Алтанзул",
+    positionTitle: "",
+  },
+];
+
+const Services = () => {
+  return (
+    <div className="service-inner-1 section-padding2 inner-font-1">
+      <div className="container">
+        <Top />
+        <div className="row">
+          <h4 style={{ textAlign: "center", paddingBottom: 10 }}>
+            ТУЗ-ын гишүүд
+          </h4>
+          {members.map((member) => (
+            <MemberCard member={member} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Services;
