@@ -1827,7 +1827,7 @@ img {
   }
 }
 .heading2 small.heading-top.inner-heading-top {
-  background: rgba(121, 119, 198, 0.2);
+  background: rgba(137, 233, 174, 0.2);
 }
 .heading2 small.heading-top img {
   width: 24px;
@@ -4390,7 +4390,7 @@ button.search-icon {
 }
 
 .theme-btn-2 {
-  background: #243d31;
+  background: #007c48;
   border-radius: 8px;
   font-weight: 700;
   font-size: 16px;
@@ -4424,6 +4424,7 @@ button.search-icon {
   background: #27ae60;
   transition: all 0.3s;
   transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .theme-btn-3 {
@@ -5145,7 +5146,7 @@ img.service-shape1 {
 
 .single-inner-service {
   background: #ffffff;
-  border: 1px solid rgba(22, 21, 64, 0.25);
+  border: 1px solid rgba(0, 131, 15, 0.25);
   border-radius: 7px;
   padding: 24px;
   margin-bottom: 30px;
@@ -5153,7 +5154,7 @@ img.service-shape1 {
 }
 .single-inner-service:hover {
   transition: all 0.3s;
-  border: 1px solid #7977c6;
+  border: 1px solid #007c48;
 }
 
 .service-content h3 {
@@ -9103,7 +9104,7 @@ a.up-arrow.up-4:hover {
   text-align: center;
   line-height: 46px;
   font-size: 18px;
-  color: #09120e;
+  color: #007c48;
   left: 0;
   top: 0;
   height: 46px;
@@ -9147,7 +9148,7 @@ a.up-arrow.up-4:hover {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #09120e;
+  stroke: #007c48;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;

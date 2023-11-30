@@ -4,7 +4,7 @@ import Link from "next/link";
 const SubComplain = () => {
   return (
     <li className="dropdown-parrent">
-      <Link href="#">КОМПЛАЕНС</Link>
+      <Link href="/complain">КОМПЛАЕНС</Link>
       <ul className="theme-dropdown">
         <li>
           <Link href="#">Компанийн засаглал</Link>

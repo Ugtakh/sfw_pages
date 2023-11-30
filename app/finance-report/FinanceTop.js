@@ -1,20 +1,22 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const FinanceTop = () => {
   return (
     <div className="about-inner bg-28 section-padding">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="mr50">
-              <div className="heading2 no-margin-heading">
-                <small className="heading-top inner-heading-top">
-                  <img src="/assets/images/logo/favicon.png" alt="" />
-                  СЭКЮР ФИНАНС ББСБ
-                </small>
-                <h2>Санхүүгийн Тайлан</h2>
-                <p>PDF Uzne</p>
-              </div>
+          <div className="col-lg-12">
+            <div className="heading2 no-margin-heading">
+              <small className="heading-top inner-heading-top">
+                <img src="/assets/images/logo/favicon.png" alt="" />
+                СЭКЮР ФИНАНС ББСБ
+              </small>
+              <h2>Санхүүгийн Тайлан</h2>
+              <ViewDocs pdfUrl="/assets/pdfs/audit-report.pdf" />
             </div>
           </div>
         </div>

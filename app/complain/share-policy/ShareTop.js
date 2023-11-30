@@ -1,4 +1,8 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const ShareTop = () => {
   return (
@@ -12,8 +16,8 @@ const ShareTop = () => {
                   <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
-                <h2>Ногдол ашгийн бодлого</h2>
-                <p>PDF UZNE</p>
+                <h3>НОГДОЛ АШГИЙН БОДЛОГО</h3>
+                <ViewDocs pdfUrl="/assets/pdfs/share-policy.pdf" />
               </div>
             </div>
           </div>

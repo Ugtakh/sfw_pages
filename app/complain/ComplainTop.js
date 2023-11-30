@@ -4,7 +4,7 @@ const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
   ssr: false,
 });
 
-const InherinceTop = () => {
+const ComplainTop = () => {
   return (
     <div className="about-inner bg-28 section-padding">
       <div className="container">
@@ -16,8 +16,8 @@ const InherinceTop = () => {
                   <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
-                <h3>ЗАЛГАМЖ ХАЛААНЫ БОДЛОГО</h3>
-                <ViewDocs pdfUrl="/assets/pdfs/inherince-policy.pdf" />
+                <h3>КОМПЛАЕНСИЙН БОДЛОГО</h3>
+                <ViewDocs pdfUrl="/assets/pdfs/complains-policy.pdf" />;
               </div>
             </div>
           </div>
@@ -27,4 +27,4 @@ const InherinceTop = () => {
   );
 };
 
-export default InherinceTop;
+export default ComplainTop;

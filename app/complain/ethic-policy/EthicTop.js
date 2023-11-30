@@ -1,4 +1,8 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const EthicTop = () => {
   return (
@@ -12,8 +16,8 @@ const EthicTop = () => {
                   <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
-                <h2>Ёс зүйн дүрэм</h2>
-                <p>PDF UZNE</p>
+                <h3>ЁС ЗҮЙН ДҮРЭМ</h3>
+                <ViewDocs pdfUrl="/assets/pdfs/ethic-policy.pdf" />
               </div>
             </div>
           </div>

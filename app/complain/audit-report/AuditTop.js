@@ -1,4 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
+
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const AuditTop = () => {
   return (
@@ -12,8 +17,9 @@ const AuditTop = () => {
                   <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
-                <h2>Aудит Тайлан</h2>
-                <p>PDF UZNE</p>
+                <h3>AУДИТ ТАЙЛАН</h3>
+
+                <ViewDocs pdfUrl="/assets/pdfs/audit-report.pdf" />
               </div>
             </div>
           </div>

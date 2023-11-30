@@ -1,3 +1,4 @@
+"use client";
 import Layout from "@/components/layout/Layout";
 import Members from "./members";
 

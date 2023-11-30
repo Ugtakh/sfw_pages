@@ -67,7 +67,7 @@ export default function Welcome() {
                 <div className="hero-main-img position-relative top-right-polygon-1">
                   <img
                     className="border-radius"
-                    src="/assets/images/about/Welcome.jpg"
+                    src="/assets/images/about/welcome.jpg"
                     alt=""
                   />
                   <div className="corner-shape2 position-absolute">

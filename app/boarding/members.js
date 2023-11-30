@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import MemberCard from "./MemberCard";
 import Top from "./Top";
+import dynamic from "next/dynamic";
+
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const members = [
   {
@@ -31,6 +36,11 @@ const members = [
 ];
 
 const Services = () => {
+  const [isView, setIsView] = useState(false);
+
+  const handleView = () => {
+    setIsView(!isView);
+  };
   return (
     <div className="service-inner-1 section-padding2 inner-font-1">
       <div className="container">
@@ -50,7 +60,12 @@ const Services = () => {
                   СЭКЮР ФИНАНС ББСБ
                 </small> */}
             <h2>ТУЗ-ийн Журам</h2>
-            <p>PDF UZNE</p>
+            <div style={{ margin: 10 }}>
+              <div className="theme-btn-2" onClick={handleView}>
+                {isView ? "НУУХ" : "ХАРАХ"}
+              </div>
+            </div>
+            {isView && <ViewDocs pdfUrl="/assets/pdfs/boarding-policy.pdf" />}
           </div>
         </div>
       </div>

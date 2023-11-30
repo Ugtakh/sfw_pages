@@ -1,4 +1,8 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
+  ssr: false,
+});
 
 const SocialTop = () => {
   return (
@@ -12,8 +16,8 @@ const SocialTop = () => {
                   <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
-                <h2>Нийгмийн хариуцлагын бодлого</h2>
-                <p>PDF UZNE</p>
+                <h3>НИЙГМИЙН ХАРИУЦЛАГЫН БОДЛОГО</h3>
+                <ViewDocs pdfUrl="/assets/pdfs/social-policy.pdf" />
               </div>
             </div>
           </div>
