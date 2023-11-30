@@ -28,7 +28,7 @@ export default function About() {
                 data-aos-duration={800}
               >
                 <div className="about-bg-main-img position-relative top-left-polygon-1">
-                  <img src="/assets/img/about/about21.png" alt="" />
+                  <img src="/assets/images/about/welcome2.jpg" alt="" />
                   <div className="corner-right-bottom-shape2 position-absolute">
                     <img
                       src="/assets/img/shapes/shape-right-bottom2.png"
@@ -48,7 +48,7 @@ export default function About() {
                   data-aos-duration={600}
                   className="heading-top"
                 >
-                  <img src="/assets/img/icons/hands.svg" alt="" />
+                  <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
                 <h2 data-aos="fade-left" data-aos-duration={800}>

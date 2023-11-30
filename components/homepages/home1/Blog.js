@@ -13,7 +13,7 @@ export default function Blog() {
                   data-aos-duration={600}
                   className="heading-top"
                 >
-                  <img src="/assets/img/icons/hands.svg" alt="" />
+                  <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
                 <h2 data-aos="fade-up" data-aos-duration={800}>
@@ -31,16 +31,19 @@ export default function Blog() {
             >
               <div className="single-blog blog-md ">
                 <div className="blog-img">
-                  <img src="/assets/img/blog/blog4.png" alt="" />
+                  <img
+                    src="/assets/images/responsible/responsible2.jpg"
+                    alt=""
+                  />
                 </div>
                 <div className="blog-contents">
                   <h3>
-                    <Link href="/single">
-                      How To Write Your Consulting Firm Mission Statement ( Why
-                      It’s Important).
+                    <Link href="/social-responsible">
+                      Бүх нийтээр мод тарих үндэсний өдрийг тохиолдуулан
+                      харилцагч нартаа ...
                     </Link>
                   </h3>
-                  <Link href="#" className="theme-btn-4">
+                  <Link href="/social-responsible" className="theme-btn-4">
                     цааш унших
                     <span>
                       <i className="fa-solid fa-arrow-right" />
@@ -56,16 +59,19 @@ export default function Blog() {
             >
               <div className="single-blog blog-md">
                 <div className="blog-img">
-                  <img src="/assets/img/blog/blog1.png" alt="" />
+                  <img
+                    src="/assets/images/responsible/responsible3.jpg"
+                    alt=""
+                  />
                 </div>
                 <div className="blog-contents">
                   <h3>
-                    <Link href="/single">
-                      Personal Branding For Consultants: Be Authentic To Get
-                      More Clients.
+                    <Link href="/social-responsible">
+                      Шинэ коронавирусын халдвар (COVID-19) гарч МББСБХ-с
+                      зээлийн шимтгэлийг 0 болгох ...
                     </Link>
                   </h3>
-                  <Link href="#" className="theme-btn-4">
+                  <Link href="/social-responsible" className="theme-btn-4">
                     цааш унших
                     <span>
                       <i className="fa-solid fa-arrow-right" />
@@ -81,15 +87,19 @@ export default function Blog() {
             >
               <div className="single-blog blog-md">
                 <div className="blog-img">
-                  <img src="/assets/img/blog/blog2.png" alt="" />
+                  <img
+                    src="/assets/images/responsible/responsible1.jpg"
+                    alt=""
+                  />
                 </div>
                 <div className="blog-contents">
                   <h3>
-                    <Link href="/single">
-                      What Is An Entrepreneurial Consultant? (Examples Stories).
+                    <Link href="/social-responsible">
+                      “Тэрбум мод тарих” хөтөлбөрийн хүрээнд Хашаандаа сайхан
+                      амьдаръя ...
                     </Link>
                   </h3>
-                  <Link href="#" className="theme-btn-4">
+                  <Link href="/social-responsible" className="theme-btn-4">
                     цааш унших
                     <span>
                       <i className="fa-solid fa-arrow-right" />

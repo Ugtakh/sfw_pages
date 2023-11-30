@@ -43,6 +43,16 @@ const Services = () => {
             <MemberCard member={member} />
           ))}
         </div>
+        <div className="row">
+          <div className="col-lg-12">
+            {/* <small className="heading-top inner-heading-top">
+                  <img src="/assets/images/logo/favicon.png" alt="" />
+                  СЭКЮР ФИНАНС ББСБ
+                </small> */}
+            <h2>ТУЗ-ийн Журам</h2>
+            <p>PDF UZNE</p>
+          </div>
+        </div>
       </div>
     </div>
   );

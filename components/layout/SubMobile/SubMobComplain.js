@@ -4,7 +4,7 @@ import React from "react";
 const SubMobComplain = ({ isActive, handleToggle }) => {
   return (
     <li>
-      <Link href="/complain">КОМПЛАЙНС</Link>
+      <Link href="/complain">КОМПЛАЕНС</Link>
       <span
         className={
           isActive.key == 4 ? "submenu-button submenu-opened" : "submenu-button"
@@ -18,22 +18,54 @@ const SubMobComplain = ({ isActive, handleToggle }) => {
         style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}
       >
         <li>
-          <Link href="/complain">ДОТООД ХЯНАЛТЫН БОДЛОГО</Link>
+          <Link href="#">КОМПАНИЙН ЗАСАГЛАЛ</Link>
+          <ul
+            style={{
+              paddingLeft: 25,
+            }}
+          >
+            <li>
+              <Link href="/complain/inner-audit-policy">
+                ДОТООД ХЯНАЛТЫН БОДЛОГО
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/inherince-policy">
+                ЗАЛГАМЖ ХАЛААНЫ БОДЛОГО
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/risk-policy">
+                ЭРСДЭЛИЙН УДИРДЛАГЫН БОДЛОГО
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/share-policy">НОГДОЛ АШГИЙН БОДЛОГО</Link>
+            </li>
+            <li>
+              <Link href="/complain">ЭРСДЭЛИЙН БОДЛОГО</Link>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link href="/complain">ДОТООД АУДИТЫН БОДЛОГО</Link>
+          <Link href="#">БОДЛОГО ДҮРЭМ</Link>
+          <ul
+            style={{
+              paddingLeft: 25,
+            }}
+          >
+            <li>
+              <Link href="/complain/ethic-policy">ЁС ЗҮЙН ДҮРЭМ</Link>
+            </li>
+            <li>
+              <Link href="/complain/social-policy">
+                НИЙГМИЙН ХАРИУЦЛАГЫН БОДЛОГО
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link href="/complain">ЗАЛГАМЖ ХАЛААНЫ БОДЛОГО</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЦАЛИН УРАМШУУЛАЛ БОДЛОГО</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЁС ЗҮЙН ДҮРЭМ</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЭРСДЭЛИЙН БОДЛОГО</Link>
+          <Link href="/complain/audit-report">AУДИТ ТАЙЛАН</Link>
         </li>
       </ul>
     </li>

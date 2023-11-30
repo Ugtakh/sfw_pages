@@ -15,15 +15,23 @@ export const CultureCard = ({ card }) => {
                 background: "#eeeef9",
               }}
             >
-              {/* <img src={card.imgUrl} alt="" /> */}
-              {card.icon}
+              <img src={card.imgUrl} alt={card.title} />
+              {/* {card.icon} */}
             </div>
-            <div className="team-content bg-18 weight-700">{card.title}</div>
-          </div>
-          <div className="team-sides team-back-side">
-            <div className="team-content bg-18 weight-700">
+            <div
+              className="team-content bg-18 weight-700"
+              style={{ color: "white" }}
+            >
               {card.title}
-              <p style={{ paddingLeft: 20, paddingRight: 20 }}>
+            </div>
+          </div>
+          <div className="team-sides team-back-side bg-18">
+            <div
+              className="team-content bg-18 weight-700"
+              style={{ color: "white" }}
+            >
+              {card.title}
+              <p style={{ paddingLeft: 20, paddingRight: 20, color: "white" }}>
                 {card.content}
               </p>
               <div className="space10" />

@@ -27,11 +27,11 @@ const SubHome = ({ isActive, handleToggle }) => {
           <Link href="/social-responsible">НИЙГМИЙН ХАРИУЦЛАГА</Link>
         </li>
         <li>
-          <Link href="/about">САНХҮҮГИЙН ТАЙЛАН</Link>
+          <Link href="/finance-report">САНХҮҮГИЙН ТАЙЛАН</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/about">ЗУРГИЙН ЦОМОГ</Link>
-        </li>
+        </li> */}
       </ul>
     </li>
   );

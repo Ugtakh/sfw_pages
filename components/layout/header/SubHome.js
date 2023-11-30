@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SubHome = () => {
   return (
-    <li className="dropdown-parrent">
+    <li className="dropdown-parrent" style={{}}>
       <Link href="/">НҮҮР</Link>
     </li>
   );

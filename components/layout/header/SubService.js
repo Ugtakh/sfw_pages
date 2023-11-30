@@ -7,10 +7,19 @@ const SubService = () => {
       <Link href="/services">БҮТЭЭГДЭХҮҮН ҮЙЛЧИЛГЭЭ</Link>
       <ul className="theme-dropdown">
         <li>
-          <Link href="/services">ЗЭЭЛИЙН ТӨРӨЛ ХҮҮ, ХУГАЦАА</Link>
+          <Link href="/services/loan-1">ШУУРХАЙ ЗЭЭЛ</Link>
         </li>
         <li>
-          <Link href="/services">ИТГЭЛЦЭЛИЙН ҮЙЛЧИЛГЭЭ</Link>
+          <Link href="/services/loan-2">БИЗНЕСИЙН ЗЭЭЛ</Link>
+        </li>
+        <li>
+          <Link href="/services/loan-3">АВТОМАШИНЫ ЗЭЭЛ</Link>
+        </li>
+        <li>
+          <Link href="/services/loan-5">ХЭРЭГЛЭЭНИЙ ЗЭЭЛ</Link>
+        </li>
+        <li>
+          <Link href="/services/loan-4">НОГООН ЗЭЭЛ</Link>
         </li>
       </ul>
     </li>

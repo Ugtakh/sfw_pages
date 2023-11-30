@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Манай хамт олон">
-        <div>
+        <div style={{ marginTop: 30 }}>
           <Top />
           <Middle />
           <Counter />

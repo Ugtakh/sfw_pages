@@ -6,18 +6,21 @@ const services = [
     icon: "/assets/images/logo/favicon.png",
     content:
       "Өрхийн хэрэглээнд зориулсан үл хөдлөх хөрөнгө болон автомашин барьцаалсан зээл",
+    link: "/services/loan-1",
   },
   {
     name: "БИЗНЕСИЙН ЗЭЭЛ",
     icon: "/assets/images/logo/favicon.png",
     content:
       "Бүх төрлийн бизнес эрхлэгчдийг дэмжих, эргэлтийн хөрөнгө, хөрөнгө оруулалтын урт хугацаатай бизнесийн зээл",
+    link: "/services/loan-2",
   },
   {
     name: "АВТОМАШИНЫ ЗЭЭЛ",
     icon: "/assets/images/logo/favicon.png",
     content:
       "Өрхийн хэрэглээндээ зориулан автомашин худалдан авахад зориулсан зээл",
+    link: "/services/loan-3",
   },
 
   {
@@ -25,12 +28,14 @@ const services = [
     icon: "/assets/images/logo/favicon.png",
     content:
       "Өрхийн хэрэглээний цахилгаан бараа болон гар утас худалдан авахад зориулсан зээл",
+    link: "/services/loan-5",
   },
   {
     name: "НОГООН ЗЭЭЛ",
     icon: "/assets/images/logo/favicon.png",
     content:
       "Байгальд ээлтэй, эрчим хүчний хэмнэлттэй, агаарын болон хөрсний бохирдлыг бууруулахад чиглэсэн үйл ажиллагааг дэмжих зорилготой зээл",
+    link: "/services/loan-4",
   },
 ];
 
@@ -47,7 +52,7 @@ export default function TaxBusiness() {
                   data-aos-duration={600}
                   className="heading-top"
                 >
-                  <img src="/assets/img/icons/hands.svg" alt="" />
+                  <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
                 <h2 data-aos="fade-up" data-aos-duration={800}>
@@ -68,7 +73,7 @@ export default function TaxBusiness() {
               data-aos="fade-up"
               data-aos-duration={1400}
             >
-              <Link className="theme-btn-3" href="#">
+              <Link className="theme-btn-3" href="/services">
                 илүү дэлгэрэнгүй
                 <span>
                   <i className="fa-solid fa-arrow-right" />
@@ -91,7 +96,7 @@ const Card = ({ service }) => {
         </div>
         <h3>{service.name}</h3>
         <p>{service.content}</p>
-        <Link href="/services" className="theme-btn-7">
+        <Link href={service.link} className="theme-btn-7">
           цааш үзэх
           <span>
             <i className="fa-solid fa-arrow-right" />

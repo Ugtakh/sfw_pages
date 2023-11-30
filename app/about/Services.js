@@ -7,10 +7,10 @@ const Services = () => {
         <div className="row">
           <div className="col-lg-8 m-auto">
             <div className="heading2 text-center">
-              {/* <small className="heading-top inner-heading-top">
-                <img src="/assets/img/icons/hands.svg" alt="" />
+              <small className="heading-top inner-heading-top">
+                <img src="/assets/images/logo/favicon.png" alt="" />
                 СЭКЮР ФИНАНС ББСБ
-              </small> */}
+              </small>
               <h3 style={{ paddingTop: 30 }}>БИДНИЙ АЛСЫН ХАРАА</h3>
               <h5>
                 Бид илүү сайн ирээдүйг бүтээхийн тулд хүртээмжтэй, санхүүгийн

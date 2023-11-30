@@ -1375,7 +1375,7 @@ img {
 }
 
 .bg-18 {
-  background: #dce0f3 !important;
+  background: #007c48 !important;
 }
 
 .bg-19 {
@@ -2500,7 +2500,7 @@ img {
     background: #ffffff;
     transform: scale(1, 0);
     transform-origin: 0 0;
-    min-width: 210px;
+    min-width: 250px;
     padding: 10px;
     visibility: hidden;
     opacity: 0;
@@ -2554,16 +2554,16 @@ img {
 }
 @media (min-width: 992px) {
   .header-2 .main-menu ul li {
-    color: #fdc24c;
+    color: #007c48;
   }
   .header-2 .main-menu ul li a:hover {
-    color: #fdc24c;
+    color: #007c48;
   }
   .header-2 li.dropdown-parrent:hover > a {
-    color: #fdc24c;
+    color: #007c48;
   }
   .header-2 li.dropdown-parrent ul.theme-dropdown li a:after {
-    background: #fdc24c;
+    background: #007c48;
   }
   .header-2 .quick_contact .quick_contact_icon i {
     color: #243d31;
@@ -3457,7 +3457,7 @@ a.footer-logo {
   transition: all 0.3s;
 }
 .footer-2 .footer-menu ul li a:hover {
-  color: #fdc24c;
+  color: #007c48;
   padding-left: 3px;
   transition: all 0.3s;
 }
@@ -7993,7 +7993,7 @@ li.multi-dropdown-parrent:hover > ul.multi-dropdown.theme-dropdown {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #5c5b79;
+  background: #007c48;
   z-index: 99;
   padding: 40px 30px;
   left: -100%;

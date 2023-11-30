@@ -6,7 +6,7 @@ const Top = () => {
       <div className="col-lg-8 m-auto">
         <div className="heading2 text-center">
           <small className="heading-top inner-heading-top">
-            <img src="/assets/img/icons/hands.svg" alt="" />
+            <img src="/assets/images/logo/favicon.png" alt="" />
             СЭКЮР ФИНАНС ББСБ
           </small>
           <h3>“Сэкюр Финанс ББСБ” ХХК-ийн Төлөөлөн Удирдах Зөвлөл</h3>

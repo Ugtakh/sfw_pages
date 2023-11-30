@@ -10,28 +10,28 @@ const cards = [
     title: "Хамт олон",
     content:
       "Бид үргэлж хамтын хүчээр аливаа ажилын ард гардаг бөгөөд манай байгууллагууллагын нэгээхэн чухал хэсэг юм",
-    imgUrl: "/assets/images/sliders/slider1.png",
+    imgUrl: "/assets/images/about/team1.jpg",
     icon: <RiTeamFill color="green" fontSize={120} />,
   },
   {
     title: "Аз жаргал",
     content:
       "Бид үргэлж аз жаргалтайгаар ажлыг хийдэг бөгөөд та бүхнийасуудлыг хамтдаа шийдэж өгнө",
-    imgUrl: "/assets/images/sliders/slider2.png",
+    imgUrl: "/assets/images/about/team.jpg",
     icon: <BiHappyHeartEyes color="green" fontSize={120} />,
   },
   {
     title: "Инээмсэглэл",
     content:
       "Бид халуун дотно мэдрэмжийг таньд өгөхдөө баяртай байдаг. Үргэлж эерэг, үргэлж хамтдаа, үргэлж шинэлэг байна.",
-    imgUrl: "/assets/images/sliders/slider3.png",
+    imgUrl: "/assets/images/about/Welcome.jpg",
     icon: <BsEmojiSmile color="green" fontSize={120} />,
   },
   {
     title: "Талархал",
     content:
       "Бид нөхцөл байдал, цаг агаар, салхины чигийг өөрчилж чадахгүй ч өөрийгөө өөрчилж чадна. Үргэлж эерэг, үргэлж хамтдаа, үргэлж шинэлэг байна",
-    imgUrl: "/assets/images/sliders/slider4.png",
+    imgUrl: "/assets/images/about/culture1.jpg",
     icon: <FaGratipay color="green" fontSize={120} />,
   },
 ];

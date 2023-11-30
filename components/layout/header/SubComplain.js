@@ -4,25 +4,54 @@ import Link from "next/link";
 const SubComplain = () => {
   return (
     <li className="dropdown-parrent">
-      <Link href="/complain">КОМПЛАЙНС</Link>
+      <Link href="#">КОМПЛАЕНС</Link>
       <ul className="theme-dropdown">
         <li>
-          <Link href="/complain">ДОТООД ХЯНАЛТЫН БОДЛОГО</Link>
+          <Link href="#">Компанийн засаглал</Link>
+          <ul
+            style={{
+              paddingLeft: 25,
+            }}
+          >
+            <li>
+              <Link href="/complain/inner-audit-policy">
+                Дотоод аудитын бодлого
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/inherince-policy">
+                Залгамж халааны бодлого
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/risk-policy">
+                Эрсдэлийн удирдлагын бодлого
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/share-policy">Ногдол ашгийн бодлого</Link>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link href="/complain">ДОТООД АУДИТЫН БОДЛОГО</Link>
+          <Link href="#">Бодлого дүрэм</Link>
+          <ul
+            style={{
+              paddingLeft: 25,
+            }}
+          >
+            <li>
+              <Link href="/complain/ethic-policy">Ёс зүйн дүрэм</Link>
+            </li>
+            <li>
+              <Link href="/complain/social-policy">
+                Нийгмийн хариуцлагын бодлого
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link href="/complain">ЗАЛГАМЖ ХАЛААНЫ БОДЛОГО</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЦАЛИН УРАМШУУЛАЛ БОДЛОГО</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЁС ЗҮЙН ДҮРЭМ</Link>
-        </li>
-        <li>
-          <Link href="/complain">ЭРСДЭЛИЙН БОДЛОГО</Link>
+          <Link href="/complain/audit-report">Aудит Тайлан</Link>
         </li>
       </ul>
     </li>

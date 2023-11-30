@@ -1,10 +1,8 @@
 "use client";
 import Layout from "@/components/layout/Layout";
 import About from "@/components/homepages/home1/About";
-import About2 from "@/components/homepages/home1/About2";
 import Blog from "@/components/homepages/home1/Blog";
 import TaxBusiness from "@/components/homepages/home1/TaxBusiness";
-import Testimonial from "@/components/homepages/home1/Testimonial";
 import Welcome from "@/components/homepages/home1/Welcome";
 import { useEffect, useState } from "react";
 import Loading from "@/components/elements/Loading";
@@ -29,8 +27,6 @@ export default function Page() {
         <Welcome />
         <TaxBusiness />
         <About />
-        <About2 />
-        <Testimonial />
         <Blog />
       </Layout>
     </>

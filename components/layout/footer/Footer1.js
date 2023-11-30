@@ -1,4 +1,7 @@
+"use client";
 import Link from "next/link";
+// import anket from "../../../public/assets/images/anket.docx";
+
 export default function Footer1() {
   return (
     <>
@@ -61,21 +64,48 @@ export default function Footer1() {
               <div className="single-footer">
                 <h3>Холбоо барих</h3>
                 <div className="footer-contact">
-                  <div className="single-contact">
+                  <div
+                    className="single-contact"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
                     <div className="contact-icon">
                       <img src="/assets/img/icons/contact-phone2.svg" alt="" />
                     </div>
-                    <Link href="#">+976 9098-8085</Link>
-                    <Link href="#">+976 9010-8085</Link>
+                    <div style={{ marginTop: 10 }}>
+                      <Link href="#">+976 75778085</Link>
+                    </div>
+                    {/* <Link href="#">+976 9010-8085</Link> */}
                   </div>
                 </div>
                 <div className="footer-contact">
-                  <div className="single-contact">
+                  <div
+                    className="single-contact"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
                     <div className="contact-icon">
                       <img src="/assets/img/icons/contact-email2.svg" alt="" />
                     </div>
-                    <Link href="#">hr.securefinance@gmail.com</Link>
-                    <Link href="#">secure.support@gmail.com</Link>
+                    <div style={{ marginTop: 10 }}>
+                      <Link href="#">info@securefinance.mn</Link>
+                    </div>
+                    {/* <Link href="#">secure.support@gmail.com</Link> */}
+                  </div>
+                </div>
+                <div className="footer-contact">
+                  <div
+                    className="single-contact"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <div className="contact-icon">
+                      <img src="/assets/img/icons/contact-email2.svg" alt="" />
+                    </div>
+                    <div>
+                      <Link href="#">Хүний нөөц </Link>
+                      <a download="Anket" href={"/assets/images/anket.docx"}>
+                        Анкет татах
+                      </a>
+                    </div>
+                    {/* <Link href="#">secure.support@gmail.com</Link> */}
                   </div>
                 </div>
               </div>
@@ -89,18 +119,13 @@ export default function Footer1() {
               <div className="social social2">
                 <ul>
                   <li>
-                    <a data-bs-toggle="tooltip" title="Linked in" href="#">
-                      <i className="fa-brands fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a data-bs-toggle="tooltip" title="Facebook" href="#">
+                    <a
+                      data-bs-toggle="tooltip"
+                      title="Facebook"
+                      target="_blank"
+                      href="https://www.facebook.com/SecureFinanceNBFI?mibextid=LQQJ4d"
+                    >
                       <i className="fa-brands fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li>
-                    <a data-bs-toggle="tooltip" title="Instagram" href="#">
-                      <i className="fa-brands fa-instagram" />
                     </a>
                   </li>
                 </ul>

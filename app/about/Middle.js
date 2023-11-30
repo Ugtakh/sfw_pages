@@ -7,7 +7,7 @@ const Middle = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-bg-main-img position-relative mr50">
-              <img src="/assets/images/about/about3.jpg" alt="" />
+              <img src="/assets/images/about/about4.jpg" alt="" />
               <div className="corner-right-bottom-shape2 position-absolute">
                 <img src="/assets/img/shapes/shape-right-bottom2.png" alt="" />
               </div>
@@ -16,10 +16,10 @@ const Middle = () => {
           <div className="col-lg-6">
             <div className="ml50">
               <div className="heading2 no-margin-heading">
-                {/* <small className="heading-top inner-heading-top">
-                  <img src="/assets/img/icons/hands.svg" alt="" />
+                <small className="heading-top inner-heading-top">
+                  <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
-                </small> */}
+                </small>
                 {/* <h2>
                         We Handle The Most Tedious Bookkeeping Tasks of Your
                         Business Operations.

@@ -1,4 +1,3 @@
-import LogoSlider2 from "@/components/slider/LogoSlider2";
 import Link from "next/link";
 
 export default function Welcome() {
@@ -14,45 +13,49 @@ export default function Welcome() {
                   data-aos-duration={600}
                   className="heading-top2"
                 >
-                  <img src="/assets/img/icons/money.png" alt="" />
+                  <img src="/assets/images/logo/favicon.png" alt="" />
                   СЭКЮР ФИНАНС ББСБ
                 </small>
                 <h1 data-aos="fade-right" data-aos-duration={800}>
                   Таны санхүүгийн асуудлыг бид шийднэ.
                 </h1>
-                <p data-aos="fade-right" data-aos-duration={1000}>
+                {/* <p data-aos="fade-right" data-aos-duration={1000}>
                   бид орон сууц, хашаа байшин барьцаалсан 24 сарын хугацаатай,
                   3,9%-ийн хүүтэй, 5 сая төгрөг хүрлх зээлийг орлого
                   нотлохгүйгээр өдөрт нь шийдвэрлэн олгож байна.
-                </p>
+                </p> */}
                 <div className="space30" />
                 <div
                   className="btn-group"
                   data-aos="fade-right"
                   data-aos-duration={1200}
                 >
-                  <Link className="theme-btn-2" href="#">
+                  <Link className="theme-btn-2" href="/services">
                     Илүү дэлгэрэнгүй
                     <span>
                       <i className="fa-solid fa-arrow-right" />
                     </span>
                   </Link>
-                  <Link className="theme-btn-3" href="#">
+                  <a
+                    className="theme-btn-3"
+                    target="_blank"
+                    href="https://www.facebook.com/messages/t/1577304702541752"
+                  >
                     Хүсэлт илгээх
                     <span>
                       <i className="fa-solid fa-arrow-right" />
                     </span>
-                  </Link>
+                  </a>
                 </div>
                 <div className="space80" />
-                <div
+                {/* <div
                   className="logo-area2"
                   data-aos="fade-right"
                   data-aos-duration={1400}
                 >
                   <p>Итгэлт хамтран ажиллагсад</p>
                   <LogoSlider2 />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-6 d-none d-lg-block">
@@ -64,7 +67,7 @@ export default function Welcome() {
                 <div className="hero-main-img position-relative top-right-polygon-1">
                   <img
                     className="border-radius"
-                    src="/assets/img/bg/main2.jpg"
+                    src="/assets/images/about/Welcome.jpg"
                     alt=""
                   />
                   <div className="corner-shape2 position-absolute">

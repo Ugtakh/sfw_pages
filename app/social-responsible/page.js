@@ -61,7 +61,7 @@ export default function Page() {
           className="single-blog-area padding-top inner-font-1 inner-blog-1"
           id="home"
         >
-          <div className="container">
+          <div className="container" style={{ marginTop: 30 }}>
             <h3>Нийгмийн хариуцлага</h3>
             <p>
               Манай банк бус санхүүгийн байгууллага нь Монголын банк бус

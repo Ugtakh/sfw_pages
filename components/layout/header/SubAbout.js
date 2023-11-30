@@ -18,9 +18,9 @@ const SubAbout = () => {
         <li>
           <Link href="/finance-report">САНХҮҮГИЙН ТАЙЛАН</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/galleries">ЗУРГИЙН ЦОМОГ</Link>
-        </li>
+        </li> */}
       </ul>
     </li>
   );
