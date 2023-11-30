@@ -100,12 +100,11 @@ export default function Footer1() {
                       <img src="/assets/img/icons/contact-email2.svg" alt="" />
                     </div>
                     <div>
-                      <Link href="#">Хүний нөөц </Link>
+                      <Link href="#">Хүний нөөц</Link>
                       <a download="Anket" href={"/assets/images/anket.docx"}>
                         Анкет татах
                       </a>
                     </div>
-                    {/* <Link href="#">secure.support@gmail.com</Link> */}
                   </div>
                 </div>
               </div>
