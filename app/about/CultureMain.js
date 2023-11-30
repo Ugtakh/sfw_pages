@@ -24,7 +24,7 @@ const cards = [
     title: "Инээмсэглэл",
     content:
       "Бид халуун дотно мэдрэмжийг таньд өгөхдөө баяртай байдаг. Үргэлж эерэг, үргэлж хамтдаа, үргэлж шинэлэг байна.",
-    imgUrl: "/assets/images/about/Welcome.jpg",
+    imgUrl: "/assets/images/about/welcome.jpg",
     icon: <BsEmojiSmile color="green" fontSize={120} />,
   },
   {
