@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const lists = [
   {
+    name: "Түргэн шуурхай",
+    icon: "",
+  },
+  {
     name: "Чанартай үйлчилгээ",
     icon: "",
   },
   {
     name: "Найрсаг хамт олон",
-    icon: "",
-  },
-  {
-    name: "Найдвартай үйлчилгээ",
     icon: "",
   },
 ];

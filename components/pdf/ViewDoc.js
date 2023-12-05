@@ -15,12 +15,14 @@ const ViewDoc = ({ pdfUrl }) => {
       style={{
         border: "1px solid #007c48",
         height: "750px",
+        width: "100%",
       }}
     >
       <div
         style={{
           height: "750px",
-          width: "900px",
+          width: "100%",
+
           marginLeft: "auto",
           marginRight: "auto",
           padding: 5,
@@ -28,6 +30,7 @@ const ViewDoc = ({ pdfUrl }) => {
       >
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.js">
           <Viewer
+            style={{ maxWidth: "900px" }}
             fileUrl={pdfUrl}
             // plugins={[defaultLayoutPluginInstance]}
           />

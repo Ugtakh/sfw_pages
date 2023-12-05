@@ -4,7 +4,7 @@ import Link from "next/link";
 const SubComplain = () => {
   return (
     <li className="dropdown-parrent">
-      <Link href="/complain">КОМПЛАЕНС</Link>
+      <Link href="#">КОМПЛАЕНС</Link>
       <ul className="theme-dropdown">
         <li>
           <Link href="#">Компанийн засаглал</Link>
@@ -13,6 +13,11 @@ const SubComplain = () => {
               paddingLeft: 25,
             }}
           >
+            <li>
+              <Link href="/complain/boarding-procedure">
+                ТУЗ-ийн дэргэдэх хороодын журам
+              </Link>
+            </li>
             <li>
               <Link href="/complain/inner-audit-policy">
                 Дотоод аудитын бодлого
@@ -31,15 +36,6 @@ const SubComplain = () => {
             <li>
               <Link href="/complain/share-policy">Ногдол ашгийн бодлого</Link>
             </li>
-          </ul>
-        </li>
-        <li>
-          <Link href="#">Бодлого дүрэм</Link>
-          <ul
-            style={{
-              paddingLeft: 25,
-            }}
-          >
             <li>
               <Link href="/complain/ethic-policy">Ёс зүйн дүрэм</Link>
             </li>
@@ -51,7 +47,24 @@ const SubComplain = () => {
           </ul>
         </li>
         <li>
-          <Link href="/complain/audit-report">Aудит Тайлан</Link>
+          <Link href="#">Бодлого дүрэм</Link>
+          <ul
+            style={{
+              paddingLeft: 25,
+            }}
+          >
+            <li>
+              <Link href="/complain/mab-policy">
+                Мэдээллийн Аюулгүй Байдлын Бодлого
+              </Link>
+            </li>
+            <li>
+              <Link href="/complain/hr-policy">Хүний Нөөцийн Бодлого</Link>
+            </li>
+            <li>
+              <Link href="/complain/complain-report">Комплаенс</Link>
+            </li>
+          </ul>
         </li>
       </ul>
     </li>

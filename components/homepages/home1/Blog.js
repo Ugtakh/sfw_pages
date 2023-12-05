@@ -18,7 +18,7 @@ export default function Blog() {
                 </small>
                 <h2 data-aos="fade-up" data-aos-duration={800}>
                   <span className="heilight-left">Нийгмийн </span> хариуцлагын
-                  ажилууд
+                  ажлууд
                 </h2>
               </div>
             </div>

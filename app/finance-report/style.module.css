@@ -1,0 +1,22 @@
+.btnYear {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(137, 233, 174, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btnYear:hover {
+  background: rgba(0, 124, 72, 1);
+  color: white;
+  font-weight: 500;
+}
+
+.btnActive {
+  background: rgba(0, 124, 72, 1);
+  color: white;
+  font-weight: 500;
+}
