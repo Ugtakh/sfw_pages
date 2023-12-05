@@ -17,7 +17,7 @@ const ComplainTop = () => {
                   СЭКЮР ФИНАНС ББСБ
                 </small>
                 <h3>ХҮНИЙ НӨӨЦИЙН БОДЛОГО</h3>
-                <ViewDocs pdfUrl="/assets/pdfs/human-policy.pdf" />;
+                <ViewDocs pdfUrl="/assets/pdfs/human-policy.pdf" />
               </div>
             </div>
           </div>
