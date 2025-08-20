@@ -112,7 +112,7 @@ export default function Footer1() {
           </div>
           <div className="row align-items-center copyright2">
             <div className="col-lg-6">
-              <p>© 2023 БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН.</p>
+              <p>© {new Date().getFullYear()} БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН.</p>
             </div>
             <div className="col-lg-6 text-right">
               <div className="social social2">
