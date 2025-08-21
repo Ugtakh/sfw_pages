@@ -23,7 +23,6 @@ export default async function Blog() {
     // return news;
   };
   const getAllPdfs = async () => {
-    console.log("START");
     const query = groq`*[_type == "report"]{ 
         report_description, 
         report_date, 
@@ -31,9 +30,8 @@ export default async function Blog() {
     }`;
 
     const pdfs = await client.fetch(query);
-    console.log("PDF", pdfs);
     // setNews(news);
-    // return news;
+    return pdfs;
   };
   useEffect(() => {
     // getAllNews();

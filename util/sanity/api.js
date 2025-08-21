@@ -78,7 +78,6 @@ export const creatNews = async (newsDat) => {
 //   };
 
 //   useEffect(() => {
-//     console.log(router.query.slug);
 //     if (router.query.slug) getNewsBySlug(router.query.slug as string);
 //   }, [router.query.slug]);
 

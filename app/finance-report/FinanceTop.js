@@ -34,8 +34,6 @@ const years = [
 const FinanceTop = () => {
   const [isSelectYear, setIsSelectYear] = useState(years[years.length - 1]);
 
-  console.log("lastYear", isSelectYear);
-
   const onSelectYear = (selectedObj) => {
     setIsSelectYear(selectedObj);
   };

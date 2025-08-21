@@ -37,7 +37,6 @@ export const urlFor = (source) => builder.image(source);
 //     } | order(date desc)`;
 
 //     const newses: INews[] = await client.fetch(query);
-//     console.log("KK", newses.length);
 //     setNews(newses);
 //   }
 
