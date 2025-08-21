@@ -32,11 +32,7 @@ const years = [
 ];
 
 const FinanceTop = () => {
-  const [isSelectYear, setIsSelectYear] = useState({
-    year: `${(new Date().getFullYear() - 1).toString()}`,
-    isSelected: true,
-    report: pdfUrl2022,
-  });
+  const [isSelectYear, setIsSelectYear] = useState(years[years.length - 1]);
 
   console.log("lastYear", isSelectYear);
 
