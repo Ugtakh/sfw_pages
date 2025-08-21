@@ -3,34 +3,45 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import YearList from "./YearList";
+import { report } from "process";
+
 const ViewDocs = dynamic(() => import("@/components/pdf/ViewDoc"), {
   ssr: false,
 });
+
+const pdfUrl2022 = "/assets/pdfs/finance-reports/audit-report-2022.pdf";
+const pdfUrl2023 = "/assets/pdfs/finance-reports/audit-report-2023.pdf";
+const pdfUrl2024 = "/assets/pdfs/finance-reports/audit-report-2024.pdf";
 
 const years = [
   {
     year: "2022",
     isSelected: true,
+    report: pdfUrl2022,
   },
   {
     year: "2023",
     isSelected: true,
+    report: pdfUrl2023,
   },
   {
     year: "2024",
     isSelected: true,
-  },
-  {
-    year: "2025",
-    isSelected: true,
+    report: pdfUrl2024,
   },
 ];
 
 const FinanceTop = () => {
-  const [isSelectYear, setIsSelectYear] = useState("2022");
+  const [isSelectYear, setIsSelectYear] = useState({
+    year: `${(new Date().getFullYear() - 1).toString()}`,
+    isSelected: true,
+    report: pdfUrl2022,
+  });
 
-  const onSelectYear = (year) => {
-    setIsSelectYear(year);
+  console.log("lastYear", isSelectYear);
+
+  const onSelectYear = (selectedObj) => {
+    setIsSelectYear(selectedObj);
   };
 
   return (
@@ -52,12 +63,11 @@ const FinanceTop = () => {
                 <YearList
                   years={years}
                   onSelectYear={onSelectYear}
-                  z
-                  isSelectYear={isSelectYear}
+                  isSelectYear={isSelectYear.year}
                 />
 
                 <div className="col-lg-10">
-                  <ViewDocs pdfUrl="/assets/pdfs/audit-report.pdf" />
+                  <ViewDocs pdfUrl={isSelectYear.report} />
                 </div>
               </div>
             </div>

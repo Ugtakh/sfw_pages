@@ -11,7 +11,7 @@ const YearItem = ({ year, onSelectYear, isSelectYear }) => {
           year.year === isSelectYear ? styles.btnActive : ""
         }`}
         onClick={() => {
-          onSelectYear(year.year);
+          onSelectYear(year);
         }}
       >
         {year.year}

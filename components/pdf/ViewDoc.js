@@ -14,13 +14,13 @@ const ViewDoc = ({ pdfUrl }) => {
     <div
       style={{
         border: "1px solid #007c48",
-        height: "750px",
+        height: "850px",
         width: "100%",
       }}
     >
       <div
         style={{
-          height: "750px",
+          height: "850px",
           width: "100%",
 
           marginLeft: "auto",
